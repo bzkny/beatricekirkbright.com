@@ -1,0 +1,15 @@
+{
+  "name": "beatricekirkbright.com",
+  "version": "1.0.0",
+  "description": "my portfolio site - reconstructed",
+  "main": "beatrice kirkbright",
+  "scripts": {
+    "test": "aver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "beatricekirkbright.com"
+  },
+  "author": "beatrice kirkbright",
+  "license": "ISC"
+}
