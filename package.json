@@ -2,13 +2,12 @@
   "name": "beatricekirkbright.com",
   "version": "1.0.0",
   "description": "my portfolio site - reconstructed",
-  "main": "??????",
+  "main": " ",
   "scripts": {
-    "test": "aver"
+    "test": " "
   },
-  "repository": {
-    "type": "git",
-    "url": "beatricekirkbright.com"
+  "config": {
+    "port": 3000
   },
   "author": "beatrice kirkbright",
   "license": "ISC"
