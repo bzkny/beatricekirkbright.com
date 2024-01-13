@@ -1,0 +1,88 @@
+@use "sass:math";
+@use "sass:map";
+
+$columns: 12 !default;
+
+//BREAKPOINTS & MEDIA QUERIES
+$breakpoints: (
+  "above-ipad": $columns,
+  "ipad": 4,
+  "below-ipad": 1
+);
+
+$grid-fraction : calc($columns / map-get($breakpoints, ipad));
+
+@mixin respond-to-($media) {
+    @if $media == ipad {
+      @media all and (min-width: 768px) and (max-width: 1040px) {
+        @content;
+      }
+    } @else if $media == above-ipad {
+      @media all and (min-width: 1040px) {
+        @content;
+      }
+    } @else if $media == below-ipad {
+      @media all and (min-width:768px) {
+        @content;
+      }
+    }
+}
+//THE GRID
+//GRID UTILITY CLASSES
+@mixin grid-util() {
+  @for $n from 1 through $columns {
+    
+    .col-start-#{$n} {
+        grid-column-start: 1;
+        
+        @if $n > 1 {
+          @include respond-to-(above-ipad) {
+              grid-column-start: #{$n};
+          }
+          @include respond-to-(ipad) {
+              grid-column-start: math.ceil(math.div($n, $grid-fraction));
+          }
+        }
+    }
+    .col-end-#{$n} {
+      grid-column-end: $n + 1;
+      @if $n > 2 {
+        @include respond-to-(above-ipad) {
+            grid-column-end: math.ceil(math.div($n, $grid-fraction) + 1);
+        }
+        @include respond-to-(ipad) {
+            grid-column-end: 2;
+        }
+      }
+    }
+  }
+}
+@include grid-util();
+
+
+@mixin grid-sys($columns) {
+    display: grid;
+    grid-template-columns: repeat(#{$columns}, minmax(0, 1fr));
+    grid-template-rows: min-content;   
+    gap: 1rem;
+    //NEED FOR MASONRY LAYOUT
+    grid-auto-flow: row dense;
+}
+
+//USING IT IN AN ANGULAR APP
+router-outlet {
+  display: none;
+
+//WILDCARD DECENDENT SELECTOR = ANGULAR VIEW
+  + * {
+    // grid-area: main-content;
+
+    @include grid-sys(1);
+    @include respond-to-(ipad) {
+      @include grid-sys(4);
+    }
+    @include respond-to-(above-ipad) {
+      @include grid-sys(12);
+    }
+  }
+}

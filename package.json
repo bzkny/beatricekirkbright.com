@@ -1,0 +1,14 @@
+{
+  "name": "sass-compile",
+  "version": "1.0.0",
+  "description": "To compile my sass to css",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch --update --no-source-map --style=expanded sass:css",
+    "sass-prod": "sass --no-source-map --style=compressed sass:css"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.7"
+  }
+}

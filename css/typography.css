@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Unica+One&display=swap");
+body {
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fbfbf2;
+}
+
+h1 {
+  font-size: 4rem;
+  -webkit-text-stroke: 0.5px #001a11;
+  -webkit-text-fill-color: #eaeaea;
+}
+
+p {
+  font-family: sirenia;
+  font-weight: 100;
+  text-shadow: -1px -1px 0px #001A11;
+  /* text-shadow: 2px 2px 0 #fbfbf2, -2px 2px 0 #fbfbf2, -2px -2px 0 #fbfbf2, 2px -2px 0 #fbfbf2; */
+  font-size: 1.7rem;
+}

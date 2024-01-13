@@ -1,0 +1,12 @@
+.page-layout {
+  display: grid;
+  min-height: 97vh;
+  padding: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: minmax(auto, 1025px);
+  grid-template-rows: repeat(5, min-content);
+  gap: 1rem;
+}
