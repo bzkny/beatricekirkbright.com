@@ -8,10 +8,23 @@ html {
 body {
     // background: linear-gradient(45deg,#001A11 1500px, #EEF310 1500px);
 }
-// h1 {
-//     grid-column: span 2;
-// }
 
-// p {
-//     grid-area: copy;
-// }
+.tooltip {
+    position: relative;
+    img {
+        display: none;
+        position: absolute;
+        left: 0;
+        bottom: 2.4rem;
+        width: 150px;
+    }
+
+    &:hover img {
+        display: block;
+        
+    }
+    &.barclays img {
+        width: 200px;
+        bottom: 1rem;
+    }
+}

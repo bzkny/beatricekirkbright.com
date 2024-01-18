@@ -1,3 +1,21 @@
 html {
   background: #001A11;
 }
+
+.tooltip {
+  position: relative;
+}
+.tooltip img {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 2.4rem;
+  width: 150px;
+}
+.tooltip:hover img {
+  display: block;
+}
+.tooltip.barclays img {
+  width: 200px;
+  bottom: 1rem;
+}
