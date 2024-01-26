@@ -11,8 +11,32 @@ body {
   margin-block-end: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 html {
   background: #001A11;
+}
+
+a {
+  color: #EEF310;
+  text-decoration-thickness: from-font;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 3px;
+}
+
+a.arrow-link {
+  text-underline-offset: 12px;
+  position: relative;
+  text-decoration-thickness: 2.5px;
+}
+
+a.arrow-link:after {
+  content: ">";
+  position: absolute;
+  top: 26px;
+  right: -5px;
 }
 
 .tooltip {
@@ -37,53 +61,73 @@ html {
 }
 
 body {
-  font-family: "Unica One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Hind", sans-serif;
+  font-weight: lighter;
   font-size: 1.7rem;
+  line-height: 1.4;
   color: #fbfbf2;
 }
 
 h1 {
+  font-family: "Unica One", sans-serif;
   font-size: 4rem;
+  line-height: 1.2;
   -webkit-text-stroke: 0.5px #001a11;
   -webkit-text-fill-color: #eaeaea;
 }
 
 p {
-  font-family: "Hind", sans-serif;
-  font-weight: lighter;
-  line-height: 1.4;
   padding-bottom: 0.8rem;
-  /* text-shadow: 2px 2px 0 #fbfbf2, -2px 2px 0 #fbfbf2, -2px -2px 0 #fbfbf2, 2px -2px 0 #fbfbf2; */
 }
 
-a {
-  color: #EEF310;
-  text-decoration-thickness: from-font;
-  text-decoration-skip-ink: none;
-  text-underline-offset: 3px;
-}
-
-@media all and (max-width: 565px) {
+@media all and (max-width: 590px) {
   h1 {
     font-size: 3rem;
   }
 }
-@media all and (max-width: 430px) {
+@media all and (max-width: 470px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+@media all and (max-width: 390px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+  p {
+    font-size: 1.2rem;
   }
 }
 .page-layout {
   display: grid;
   min-height: 97vh;
+  grid-template-rows: repeat(5, min-content);
+  gap: 1rem;
   padding: 1.5rem 2rem;
+}
+.page-layout.home {
+  grid-template-columns: minmax(auto, 1020px);
+}
+.page-layout.studies {
+  grid-template-columns: 188px 60px minmax(auto, 1020px);
+}
+.page-layout.studies h1 {
+  grid-column: span 3;
 }
 
 main {
-  display: grid;
-  grid-template-columns: minmax(auto, 1020px);
-  grid-template-rows: repeat(5, min-content);
-  gap: 1rem;
+  display: contents;
+}
+
+.summary {
+  grid-column: 3/4;
+}
+
+@media (pointer: coarse) {
+  .page-layout {
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+  }
 }

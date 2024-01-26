@@ -9,4 +9,6 @@ body {
   margin-block-end: 0;
 }
 
-/*# sourceMappingURL=reset.css.map */
+img {
+  max-width: 100%;
+}

@@ -2,6 +2,25 @@ html {
   background: #001A11;
 }
 
+a {
+  color: #EEF310;
+  text-decoration-thickness: from-font;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 3px;
+}
+
+a.arrow-link {
+  text-underline-offset: 12px;
+  position: relative;
+  text-decoration-thickness: 2.5px;
+}
+a.arrow-link:after {
+  content: ">";
+  position: absolute;
+  top: 26px;
+  right: -5px;
+}
+
 .tooltip {
   position: relative;
 }

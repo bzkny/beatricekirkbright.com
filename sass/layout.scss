@@ -1,11 +1,30 @@
 .page-layout {
     display: grid;  
     min-height: 97vh;
-    padding: 1.5rem 2rem;
-}
-main {
-    display: grid;
-    grid-template-columns: minmax(auto, 1020px);
     grid-template-rows: repeat(5, min-content);
     gap: 1rem;
+    padding: 1.5rem 2rem;
+
+
+    &.home {
+        grid-template-columns: minmax(auto, 1020px);
+    }
+    &.studies {
+        grid-template-columns: 188px 60px minmax(auto, 1020px);
+
+        h1 {
+            grid-column: span 3;
+        }
+    }
+}
+main {
+    display: contents;
+}
+.summary {
+    grid-column: 3/4;
+}
+@media (pointer: coarse) {
+    .page-layout {
+        padding: 1.5rem 1.5rem 1.5rem 2rem;
+    }
 }
