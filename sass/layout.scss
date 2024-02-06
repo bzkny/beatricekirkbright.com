@@ -1,25 +1,49 @@
+@use 'lf';
+
 .page-layout {
     display: grid;  
     min-height: 97vh;
     grid-template-rows: repeat(5, min-content);
     gap: 1rem;
     padding: 1.5rem 2rem;
-
-
-    &.home {
-        grid-template-columns: minmax(auto, 1020px);
-    }
-    &.studies {
-        grid-template-columns: 188px 60px minmax(auto, 1020px);
-
-        h1 {
-            grid-column: span 3;
-        }
-    }
 }
 main {
     display: contents;
 }
+
+.home {
+    grid-template-columns: minmax(auto, 1020px);
+}
+.studies {
+    grid-template-columns: 180px 60px minmax(auto, 1000px);
+
+    h1 {
+        grid-column: span 3;
+    }
+}
+
+.nav-row {
+    grid-column: span 3;
+    display: grid;
+    grid-template-areas: "back next";
+    grid-template-rows: 77px;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0;
+    background: lf.$primary-green;
+    align-items: center;
+
+    a:first-of-type {
+        text-align: right;
+    }
+    img {
+        margin-top: 0;
+        width: 180px;
+        padding-bottom: 6px;
+        display: block;
+    }
+}
+
 .summary {
     grid-column: 3/4;
 }

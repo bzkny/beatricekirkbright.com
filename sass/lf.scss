@@ -1,26 +1,54 @@
 $primary-yellowgreen: #EEF310;
 // $primary-green: #00301F;
 $primary-green: #001A11;
+$matte-black: #201F22;
+$white: #eaeaea;
 
 html {
     background: $primary-green;
 }
 
 a {
-    color: $primary-yellowgreen;text-decoration-thickness: from-font;
-    text-decoration-skip-ink: none;
-    text-underline-offset: 3px;
+    color: $primary-yellowgreen;
+    text-decoration: none;
+
+
+    &:hover, 
+    &:active {
+        text-shadow: 1px 1px black, 1px 1px 2px #eaeaea;
+    }
+    
+    p {
+        color: unset;
+    }
+   
 }
 a.arrow-link {
-    text-underline-offset: 12px;
-    position: relative;
-    text-decoration-thickness: 2.5px;
 
+    position: relative;
+    
     &:after {
-        content: ">";
-        position: absolute;
-        top: 26px;
-        right: -5px;
+            //NEW STYLE
+            content: "";
+            position: absolute;
+            top: 79%;
+            left: 5px;
+            transform: rotate(-2deg);
+            width: 102%;
+            background: #eef310;
+            bottom: 0;
+            height: 2px;
+    }
+
+    &:hover, 
+    &:active {
+
+        &:after {
+            border:  1px solid $matte-black;
+            box-shadow: 2px 1px 2px $white;
+            z-index: -1;
+        }
+
     }
 }
 
@@ -44,3 +72,14 @@ a.arrow-link {
     }
 }
 
+.studies img {
+    margin-top: 6px;
+    
+    &.barclays {
+        margin-top: -14px;
+        width: 100%;
+    }
+    &.fit {
+        width: 75%;
+    }
+}

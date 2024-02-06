@@ -6,21 +6,33 @@ html {
 
 a {
   color: #EEF310;
-  text-decoration-thickness: from-font;
-  text-decoration-skip-ink: none;
-  text-underline-offset: 3px;
+  text-decoration: none;
+}
+a:hover, a:active {
+  text-shadow: 1px 1px black, 1px 1px 2px #eaeaea;
+}
+a p {
+  color: unset;
 }
 
 a.arrow-link {
-  text-underline-offset: 12px;
   position: relative;
-  text-decoration-thickness: 2.5px;
 }
 a.arrow-link:after {
-  content: ">";
+  content: "";
   position: absolute;
-  top: 26px;
-  right: -5px;
+  top: 79%;
+  left: 5px;
+  transform: rotate(-2deg);
+  width: 102%;
+  background: #eef310;
+  bottom: 0;
+  height: 2px;
+}
+a.arrow-link:hover:after, a.arrow-link:active:after {
+  border: 1px solid #201F22;
+  box-shadow: 2px 1px 2px #eaeaea;
+  z-index: -1;
 }
 
 .tooltip {
@@ -39,6 +51,17 @@ a.arrow-link:after {
 .tooltip.barclays img {
   width: 200px;
   bottom: 1rem;
+}
+
+.studies img {
+  margin-top: 6px;
+}
+.studies img.barclays {
+  margin-top: -14px;
+  width: 100%;
+}
+.studies img.fit {
+  width: 75%;
 }
 
 body {
