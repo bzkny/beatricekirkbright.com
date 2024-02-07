@@ -67,7 +67,7 @@ a.arrow-link:hover:after, a.arrow-link:active:after {
   min-height: 97vh;
   grid-template-rows: repeat(5, min-content);
   gap: 1rem;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1rem;
 }
 
 main {
@@ -79,20 +79,20 @@ main {
 }
 
 .studies {
-  grid-template-columns: 180px 60px minmax(auto, 1000px);
+  grid-template-columns: minmax(auto, 180px) minmax(auto, 1000px);
 }
 .studies h1 {
-  grid-column: span 3;
+  grid-column: span 2;
 }
 
 .nav-row {
-  grid-column: span 3;
+  grid-column: span 2;
   display: grid;
   grid-template-areas: "back next";
   grid-template-rows: 77px;
   justify-content: space-between;
   position: sticky;
-  bottom: 0;
+  bottom: -1px;
   background: #001A11;
   align-items: center;
 }
@@ -107,11 +107,16 @@ main {
 }
 
 .summary {
-  grid-column: 3/4;
+  grid-column: 2/3;
 }
 
-@media (pointer: coarse) {
+.problem {
+  grid-column: 1/2;
+}
+
+@media (pointer: coarse) or (pointer: fine) {
   .page-layout {
-    padding: 1.5rem 1.5rem 1.5rem 2rem;
+    padding: 2rem;
+    gap: 1rem 10rem;
   }
 }
