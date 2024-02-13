@@ -52,7 +52,7 @@ main {
 }
 
 //DESKTOP
-@media (pointer: coarse) or (pointer: fine) {
+@media (hover: hover) {
     .page-layout {
         padding: 2rem;
         gap: 1rem 10rem;
