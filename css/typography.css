@@ -53,15 +53,48 @@ a.arrow-link:hover:after, a.arrow-link:active:after {
   bottom: 1rem;
 }
 
-.studies img {
+.work img {
   margin-top: 6px;
 }
-.studies img.barclays {
+.work img.barclays {
   margin-top: -14px;
   width: 100%;
 }
-.studies img.fit {
+.work img.fit {
   width: 75%;
+}
+
+.studies .problem {
+  position: relative;
+}
+.studies .problem:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  transform: rotate(-2deg);
+  width: 100%;
+  background: #eef310;
+  height: 2px;
+  border: 1px solid #201F22;
+  box-shadow: 2px 1px 2px #eaeaea;
+  z-index: -1;
+}
+.studies .solution {
+  position: relative;
+}
+.studies .solution:after {
+  content: "";
+  position: absolute;
+  top: 103%;
+  left: 0px;
+  transform: rotate(2deg);
+  width: 100%;
+  background: #eef310;
+  height: 2px;
+  border: 1px solid #201F22;
+  box-shadow: 2px 1px 2px #eaeaea;
+  z-index: -1;
 }
 
 body {
