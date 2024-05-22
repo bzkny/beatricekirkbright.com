@@ -1,21 +1,18 @@
-$primary-yellowgreen: #EEF310;
-// $primary-green: #00301F;
-$primary-green: #001A11;
-$matte-black: #201F22;
-$white: #eaeaea;
+@use 'palette';
 
 html {
-    background: $primary-green;
+    background: palette.$primary-green;
 }
-
+span {
+    text-shadow: palette.$shadow;
+}
 a {
-    color: $primary-yellowgreen;
+    color: palette.$primary-yellowgreen;
     text-decoration: none;
-
 
     &:hover, 
     &:active {
-        text-shadow: 1px 1px black, 1px 1px 2px #eaeaea;
+        text-shadow: palette.$shadow;
     }
     
     p {
@@ -35,7 +32,7 @@ a.arrow-link {
             left: 5px;
             transform: rotate(-2deg);
             width: 102%;
-            background: #eef310;
+            background: palette.$primary-yellowgreen;
             bottom: 0;
             height: 2px;
     }
@@ -44,12 +41,15 @@ a.arrow-link {
     &:active {
 
         &:after {
-            border:  1px solid $matte-black;
-            box-shadow: 2px 1px 2px $white;
+            border:  1px solid palette.$matte-black;
+            box-shadow: 2px 1px 2px palette.$white;
             z-index: -1;
         }
 
     }
+}
+.text-shadow {
+    text-shadow: palette.$shadow;
 }
 
 .tooltip {
@@ -96,11 +96,11 @@ a.arrow-link {
             left: 0px;
             transform: rotate(-2deg);
             width: 100%;
-            background: #eef310;
+            background: palette.$primary-yellowgreen;
             // bottom: 0;
             height: 2px;
-            border:  1px solid $matte-black;
-            box-shadow: 2px 1px 2px $white;
+            border:  1px solid palette.$matte-black;
+            box-shadow: 2px 1px 2px palette.$white;
             z-index: -1;
         }
     }
@@ -115,11 +115,11 @@ a.arrow-link {
             left: 0px;
             transform: rotate(2deg);
             width: 100%;
-            background: #eef310;
+            background: palette.$primary-yellowgreen;
             // bottom: 0;
             height: 2px;
-            border:  1px solid $matte-black;
-            box-shadow: 2px 1px 2px $white;
+            border:  1px solid palette.$matte-black;
+            box-shadow: 2px 1px 2px palette.$white;
             z-index: -1;
         }
     }

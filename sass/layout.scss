@@ -1,14 +1,11 @@
-@use 'lf';
+@use 'palette';
 
 .page-layout {
     display: grid;  
-    min-height: 97vh;
-    grid-template-rows: repeat(5, min-content);
+    min-height: 93vh;
     gap: 1rem;
     padding: 1.5rem 1rem;
-}
-main {
-    display: contents;
+    grid-template-rows: min-content;
 }
 
 .home {
@@ -20,15 +17,23 @@ main {
     h1 {
         grid-column: span 2;
     }
+    .summary {
+        margin-left: 4rem;
+        padding-left: 4rem;
+        border-left: 1px solid palette.$white
+    }
+    .nav-row {
+        grid-column: span 2;
+    }
 }
 .studies { 
 
-    grid-template-columns: minmax(auto, 1020px) 1fr;
+    // grid-template-columns: minmax(auto, 1020px) 1fr;
   
     h1 {
         grid-column: span 2;
     }
-    main >*:not(.show, .nav-row){
+    main &>*:not(.show, .nav-row){
         grid-column: 1/2;
     }
     .problem, .solution {
@@ -60,15 +65,15 @@ main {
 }
 
 .nav-row {
-    grid-column: span 2;
     display: grid;
     grid-template-areas: "back next";
-    grid-template-rows: 77px;
+    grid-template-rows: 7vh;
     justify-content: space-between;
     position: sticky;
     bottom: -1px;
-    background: lf.$primary-green;
-    align-items: center;
+    background: palette.$primary-green;
+    align-self: end;
+    border-top: palette.$shadow;
 
     a:first-of-type {
         text-align: right;
@@ -84,8 +89,11 @@ main {
 //DESKTOP
 @media (hover: hover) {
     .page-layout {
-        padding: 2rem;
-        gap: 1rem 10rem;
+        padding: 2rem 2rem 0;
+        gap: 1rem;
+    }
+    .nav-row {
+        padding: 0 2rem 1rem;
     }
 
 }

@@ -2,6 +2,10 @@ html {
   background: #001A11;
 }
 
+span {
+  text-shadow: 1px 1px black, 1px 1px 2px #eaeaea;
+}
+
 a {
   color: #EEF310;
   text-decoration: none;
@@ -23,7 +27,7 @@ a.arrow-link:after {
   left: 5px;
   transform: rotate(-2deg);
   width: 102%;
-  background: #eef310;
+  background: #EEF310;
   bottom: 0;
   height: 2px;
 }
@@ -31,6 +35,10 @@ a.arrow-link:hover:after, a.arrow-link:active:after {
   border: 1px solid #201F22;
   box-shadow: 2px 1px 2px #eaeaea;
   z-index: -1;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px black, 1px 1px 2px #eaeaea;
 }
 
 .tooltip {
@@ -72,7 +80,7 @@ a.arrow-link:hover:after, a.arrow-link:active:after {
   left: 0px;
   transform: rotate(-2deg);
   width: 100%;
-  background: #eef310;
+  background: #EEF310;
   height: 2px;
   border: 1px solid #201F22;
   box-shadow: 2px 1px 2px #eaeaea;
@@ -88,7 +96,7 @@ a.arrow-link:hover:after, a.arrow-link:active:after {
   left: 0px;
   transform: rotate(2deg);
   width: 100%;
-  background: #eef310;
+  background: #EEF310;
   height: 2px;
   border: 1px solid #201F22;
   box-shadow: 2px 1px 2px #eaeaea;

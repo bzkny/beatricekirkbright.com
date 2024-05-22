@@ -1,106 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Unica+One&display=swap");
-html {
-  background: #001A11;
-}
-
-a {
-  color: #EEF310;
-  text-decoration: none;
-}
-a:hover, a:active {
-  text-shadow: 1px 1px black, 1px 1px 2px #eaeaea;
-}
-a p {
-  color: unset;
-}
-
-a.arrow-link {
-  position: relative;
-}
-a.arrow-link:after {
-  content: "";
-  position: absolute;
-  top: 79%;
-  left: 5px;
-  transform: rotate(-2deg);
-  width: 102%;
-  background: #eef310;
-  bottom: 0;
-  height: 2px;
-}
-a.arrow-link:hover:after, a.arrow-link:active:after {
-  border: 1px solid #201F22;
-  box-shadow: 2px 1px 2px #eaeaea;
-  z-index: -1;
-}
-
-.tooltip {
-  position: relative;
-}
-.tooltip img {
-  display: none;
-  position: absolute;
-  left: 0;
-  bottom: 2.4rem;
-  width: 150px;
-}
-.tooltip:hover img {
-  display: block;
-}
-.tooltip.barclays img {
-  width: 200px;
-  bottom: 1rem;
-}
-
-.work img {
-  margin-top: 6px;
-}
-.work img.barclays {
-  margin-top: -14px;
-  width: 100%;
-}
-.work img.fit {
-  width: 75%;
-}
-
-.studies .problem {
-  position: relative;
-}
-.studies .problem:after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0px;
-  transform: rotate(-2deg);
-  width: 100%;
-  background: #eef310;
-  height: 2px;
-  border: 1px solid #201F22;
-  box-shadow: 2px 1px 2px #eaeaea;
-  z-index: -1;
-}
-.studies .solution {
-  position: relative;
-}
-.studies .solution:after {
-  content: "";
-  position: absolute;
-  top: 103%;
-  left: 0px;
-  transform: rotate(2deg);
-  width: 100%;
-  background: #eef310;
-  height: 2px;
-  border: 1px solid #201F22;
-  box-shadow: 2px 1px 2px #eaeaea;
-  z-index: -1;
-}
-
 body {
   font-family: "Hind", sans-serif;
   font-weight: lighter;
-  font-size: 1.7rem;
+  font-size: 1.25rem;
   line-height: 1.4;
   color: #fbfbf2;
 }
@@ -109,12 +12,16 @@ h1 {
   font-family: "Unica One", sans-serif;
   font-size: 4rem;
   line-height: 1.2;
-  -webkit-text-stroke: 0.5px #001a11;
+  -webkit-text-stroke: 0.5px #001A11;
   -webkit-text-fill-color: #eaeaea;
 }
 
 p {
   padding-bottom: 0.8rem;
+}
+
+.sm-text {
+  font-size: 1rem;
 }
 
 @media all and (max-width: 590px) {

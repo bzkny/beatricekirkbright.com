@@ -1,4 +1,4 @@
-@use 'lf';
+@use 'palette';
 
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Unica+One&display=swap');
@@ -6,7 +6,7 @@
 body {
     font-family: 'Hind', sans-serif;
     font-weight: lighter;
-    font-size: 1.7rem;
+    font-size: 1.25rem;
     line-height: 1.4;
     color: #fbfbf2;
 }
@@ -14,11 +14,14 @@ h1 {
     font-family: "Unica One", sans-serif;
     font-size: 4rem;
     line-height: 1.2;
-    -webkit-text-stroke: 0.5px #001a11;
-    -webkit-text-fill-color: #eaeaea;
+    -webkit-text-stroke: 0.5px palette.$primary-green;
+    -webkit-text-fill-color: palette.$white;
 }
 p {
     padding-bottom: 0.8rem;
+}
+.sm-text {
+    font-size: 1rem;
 }
 
 @media all and (max-width: 590px) {

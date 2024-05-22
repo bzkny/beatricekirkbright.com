@@ -9,6 +9,7 @@
 .col-start-2 {
   grid-column-start: 1;
 }
+
 @media all and (min-width: 1040px) {
   .col-start-2 {
     grid-column-start: 2;
@@ -19,7 +20,6 @@
     grid-column-start: 1;
   }
 }
-
 .col-end-2 {
   grid-column-end: 3;
 }
@@ -27,6 +27,7 @@
 .col-start-3 {
   grid-column-start: 1;
 }
+
 @media all and (min-width: 1040px) {
   .col-start-3 {
     grid-column-start: 3;
@@ -37,10 +38,10 @@
     grid-column-start: 1;
   }
 }
-
 .col-end-3 {
   grid-column-end: 4;
 }
+
 @media all and (min-width: 1040px) {
   .col-end-3 {
     grid-column-end: 2;
@@ -51,10 +52,10 @@
     grid-column-end: 2;
   }
 }
-
 .col-start-4 {
   grid-column-start: 1;
 }
+
 @media all and (min-width: 1040px) {
   .col-start-4 {
     grid-column-start: 4;
@@ -65,10 +66,10 @@
     grid-column-start: 2;
   }
 }
-
 .col-end-4 {
   grid-column-end: 5;
 }
+
 @media all and (min-width: 1040px) {
   .col-end-4 {
     grid-column-end: 3;
@@ -79,10 +80,10 @@
     grid-column-end: 2;
   }
 }
-
 .col-start-5 {
   grid-column-start: 1;
 }
+
 @media all and (min-width: 1040px) {
   .col-start-5 {
     grid-column-start: 5;
@@ -93,10 +94,10 @@
     grid-column-start: 2;
   }
 }
-
 .col-end-5 {
   grid-column-end: 6;
 }
+
 @media all and (min-width: 1040px) {
   .col-end-5 {
     grid-column-end: 3;
@@ -107,10 +108,10 @@
     grid-column-end: 2;
   }
 }
-
 .col-start-6 {
   grid-column-start: 1;
 }
+
 @media all and (min-width: 1040px) {
   .col-start-6 {
     grid-column-start: 6;
@@ -121,10 +122,10 @@
     grid-column-start: 2;
   }
 }
-
 .col-end-6 {
   grid-column-end: 7;
 }
+
 @media all and (min-width: 1040px) {
   .col-end-6 {
     grid-column-end: 3;
@@ -135,10 +136,10 @@
     grid-column-end: 2;
   }
 }
-
 .col-start-7 {
   grid-column-start: 1;
 }
+
 @media all and (min-width: 1040px) {
   .col-start-7 {
     grid-column-start: 7;
@@ -149,10 +150,10 @@
     grid-column-start: 3;
   }
 }
-
 .col-end-7 {
   grid-column-end: 8;
 }
+
 @media all and (min-width: 1040px) {
   .col-end-7 {
     grid-column-end: 4;
@@ -163,10 +164,10 @@
     grid-column-end: 2;
   }
 }
-
 .col-start-8 {
   grid-column-start: 1;
 }
+
 @media all and (min-width: 1040px) {
   .col-start-8 {
     grid-column-start: 8;
@@ -177,10 +178,10 @@
     grid-column-start: 3;
   }
 }
-
 .col-end-8 {
   grid-column-end: 9;
 }
+
 @media all and (min-width: 1040px) {
   .col-end-8 {
     grid-column-end: 4;
@@ -191,10 +192,10 @@
     grid-column-end: 2;
   }
 }
-
 .col-start-9 {
   grid-column-start: 1;
 }
+
 @media all and (min-width: 1040px) {
   .col-start-9 {
     grid-column-start: 9;
@@ -205,10 +206,10 @@
     grid-column-start: 3;
   }
 }
-
 .col-end-9 {
   grid-column-end: 10;
 }
+
 @media all and (min-width: 1040px) {
   .col-end-9 {
     grid-column-end: 4;
@@ -219,10 +220,10 @@
     grid-column-end: 2;
   }
 }
-
 .col-start-10 {
   grid-column-start: 1;
 }
+
 @media all and (min-width: 1040px) {
   .col-start-10 {
     grid-column-start: 10;
@@ -233,10 +234,10 @@
     grid-column-start: 4;
   }
 }
-
 .col-end-10 {
   grid-column-end: 11;
 }
+
 @media all and (min-width: 1040px) {
   .col-end-10 {
     grid-column-end: 5;
@@ -247,10 +248,10 @@
     grid-column-end: 2;
   }
 }
-
 .col-start-11 {
   grid-column-start: 1;
 }
+
 @media all and (min-width: 1040px) {
   .col-start-11 {
     grid-column-start: 11;
@@ -261,10 +262,10 @@
     grid-column-start: 4;
   }
 }
-
 .col-end-11 {
   grid-column-end: 12;
 }
+
 @media all and (min-width: 1040px) {
   .col-end-11 {
     grid-column-end: 5;
@@ -275,10 +276,10 @@
     grid-column-end: 2;
   }
 }
-
 .col-start-12 {
   grid-column-start: 1;
 }
+
 @media all and (min-width: 1040px) {
   .col-start-12 {
     grid-column-start: 12;
@@ -289,10 +290,10 @@
     grid-column-start: 4;
   }
 }
-
 .col-end-12 {
   grid-column-end: 13;
 }
+
 @media all and (min-width: 1040px) {
   .col-end-12 {
     grid-column-end: 5;
@@ -303,10 +304,10 @@
     grid-column-end: 2;
   }
 }
-
 router-outlet {
   display: none;
 }
+
 router-outlet + * {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -314,6 +315,7 @@ router-outlet + * {
   gap: 1rem;
   grid-auto-flow: row dense;
 }
+
 @media all and (min-width: 768px) and (max-width: 1040px) {
   router-outlet + * {
     display: grid;
@@ -331,4 +333,4 @@ router-outlet + * {
     gap: 1rem;
     grid-auto-flow: row dense;
   }
-}
+} 
