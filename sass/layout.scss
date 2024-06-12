@@ -12,18 +12,13 @@
     grid-template-columns: minmax(auto, 1020px);
 }
 .work {
-    grid-template-columns: minmax(auto, 180px) minmax(auto, 1000px);
+    grid-template-columns: minmax(auto, 180px) 1px minmax(auto, 1000px);
 
     h1 {
-        grid-column: span 2;
-    }
-    .summary {
-        margin-left: 4rem;
-        padding-left: 4rem;
-        border-left: 1px solid palette.$white
+        grid-column: span 3;
     }
     .nav-row {
-        grid-column: span 2;
+        grid-column: span 3;
     }
 }
 .studies { 
@@ -73,7 +68,8 @@
     bottom: -1px;
     background: palette.$primary-green;
     align-self: end;
-    border-top: palette.$shadow;
+    border-top: palette.$shadow;    
+    padding: 2rem;
 
     a:first-of-type {
         text-align: right;
@@ -90,7 +86,7 @@
 @media (hover: hover) {
     .page-layout {
         padding: 2rem 2rem 0;
-        gap: 1rem;
+        gap: 1rem 2rem;
     }
     .nav-row {
         padding: 0 2rem 1rem;

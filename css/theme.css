@@ -19,7 +19,7 @@ body {
   font-weight: lighter;
   font-size: 1.25rem;
   line-height: 1.4;
-  color: #fbfbf2;
+  color: #eaeaea;
 }
 
 h1 {
@@ -72,18 +72,13 @@ p {
 }
 
 .work {
-  grid-template-columns: minmax(auto, 180px) minmax(auto, 1000px);
+  grid-template-columns: minmax(auto, 180px) 1px minmax(auto, 1000px);
 }
 .work h1 {
-  grid-column: span 2;
-}
-.work .summary {
-  margin-left: 4rem;
-  padding-left: 4rem;
-  border-left: 1px solid #eaeaea;
+  grid-column: span 3;
 }
 .work .nav-row {
-  grid-column: span 2;
+  grid-column: span 3;
 }
 
 .studies h1 {
@@ -126,6 +121,7 @@ main .studies > *:not(.show, .nav-row) {
   background: #001A11;
   align-self: end;
   border-top: 1px 1px black, 1px 1px 2px #eaeaea;
+  padding: 2rem;
 }
 .nav-row a:first-of-type {
   text-align: right;
@@ -140,7 +136,7 @@ main .studies > *:not(.show, .nav-row) {
 @media (hover: hover) {
   .page-layout {
     padding: 2rem 2rem 0;
-    gap: 1rem;
+    gap: 1rem 2rem;
   }
   .nav-row {
     padding: 0 2rem 1rem;
