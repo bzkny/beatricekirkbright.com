@@ -17,10 +17,10 @@ a p {
   color: unset;
 }
 
-.arrow-link, hr {
+.arrow-link {
   position: relative;
 }
-.arrow-link:after, hr:after {
+.arrow-link:after {
   content: "";
   position: absolute;
   top: 79%;
@@ -31,7 +31,7 @@ a p {
   bottom: 0;
   height: 2px;
 }
-.arrow-link:hover:after, .arrow-link:active:after, hr:hover:after, hr:active:after {
+.arrow-link:hover:after, .arrow-link:active:after {
   border: 1px solid #201F22;
   box-shadow: 2px 1px 2px #eaeaea;
   z-index: -1;

@@ -84,6 +84,9 @@ p {
 .work {
   grid-template-columns: minmax(auto, 180px) 1px minmax(auto, 1000px);
 }
+.work h1 {
+  grid-column: span 3;
+}
 
 .nav-row {
   display: grid;
@@ -97,7 +100,7 @@ p {
   border-top: 1px 1px black, 1px 1px 2px #eaeaea;
   padding: 2rem;
 }
-.nav-row a:first-of-type {
+.nav-row h3:first-child {
   text-align: right;
 }
 .nav-row img {
@@ -135,10 +138,10 @@ a p {
   color: unset;
 }
 
-.arrow-link, hr {
+.arrow-link {
   position: relative;
 }
-.arrow-link:after, hr:after {
+.arrow-link:after {
   content: "";
   position: absolute;
   top: 79%;
@@ -149,7 +152,7 @@ a p {
   bottom: 0;
   height: 2px;
 }
-.arrow-link:hover:after, .arrow-link:active:after, hr:hover:after, hr:active:after {
+.arrow-link:hover:after, .arrow-link:active:after {
   border: 1px solid #201F22;
   box-shadow: 2px 1px 2px #eaeaea;
   z-index: -1;

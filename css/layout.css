@@ -13,6 +13,9 @@
 .work {
   grid-template-columns: minmax(auto, 180px) 1px minmax(auto, 1000px);
 }
+.work h1 {
+  grid-column: span 3;
+}
 
 .nav-row {
   display: grid;
@@ -26,7 +29,7 @@
   border-top: 1px 1px black, 1px 1px 2px #eaeaea;
   padding: 2rem;
 }
-.nav-row a:first-of-type {
+.nav-row h3:first-child {
   text-align: right;
 }
 .nav-row img {
