@@ -3,51 +3,15 @@
   min-height: 93vh;
   gap: 1rem;
   padding: 1.5rem 1rem;
-  grid-template-rows: min-content;
+  grid-template-rows: repeat(4, min-content);
 }
 
-.home {
+.home, .studies {
   grid-template-columns: minmax(auto, 1020px);
 }
 
 .work {
   grid-template-columns: minmax(auto, 180px) 1px minmax(auto, 1000px);
-}
-.work h1 {
-  grid-column: span 3;
-}
-.work .nav-row {
-  grid-column: span 3;
-}
-
-.studies h1 {
-  grid-column: span 2;
-}
-main .studies > *:not(.show, .nav-row) {
-  grid-column: 1/2;
-}
-.studies .problem, .studies .solution {
-  margin-bottom: 3rem;
-  grid-column: 1/1;
-}
-.studies .show {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-column: span 2;
-}
-.studies .show svg {
-  grid-column: span 2;
-}
-.studies .show svg:nth-of-type(2) {
-  grid-column: span 2;
-  grid-row: 2;
-}
-.studies .hifimobile {
-  width: 329px;
-  height: 671px;
-}
-.studies .nav-row {
-  grid-column: span 2;
 }
 
 .nav-row {
@@ -78,6 +42,6 @@ main .studies > *:not(.show, .nav-row) {
     gap: 1rem 2rem;
   }
   .nav-row {
-    padding: 0 2rem 1rem;
+    padding: 1rem 2rem;
   }
 }

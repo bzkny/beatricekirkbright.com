@@ -1,0 +1,17 @@
+.studies .problem {
+  position: relative;
+  text-shadow: none;
+}
+.studies .problem:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  transform: rotate(-2deg);
+  width: 100%;
+  background: #eaeaea;
+  height: 2px;
+  border: 1px solid #201F22;
+  box-shadow: 2px 1px 2px #eaeaea;
+  z-index: -1;
+}

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Voltaire&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Unica+One&display=swap");
 body {
   margin: 0;
@@ -16,7 +17,7 @@ img {
 
 body {
   font-family: "Hind", sans-serif;
-  font-weight: lighter;
+  font-weight: 100;
   font-size: 1.25rem;
   line-height: 1.4;
   color: #eaeaea;
@@ -28,6 +29,15 @@ h1 {
   line-height: 1.2;
   -webkit-text-stroke: 0.5px #001A11;
   -webkit-text-fill-color: #eaeaea;
+}
+
+h2, h3, h4, h5 {
+  font-family: "Voltaire", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -64,51 +74,15 @@ p {
   min-height: 93vh;
   gap: 1rem;
   padding: 1.5rem 1rem;
-  grid-template-rows: min-content;
+  grid-template-rows: repeat(4, min-content);
 }
 
-.home {
+.home, .studies {
   grid-template-columns: minmax(auto, 1020px);
 }
 
 .work {
   grid-template-columns: minmax(auto, 180px) 1px minmax(auto, 1000px);
-}
-.work h1 {
-  grid-column: span 3;
-}
-.work .nav-row {
-  grid-column: span 3;
-}
-
-.studies h1 {
-  grid-column: span 2;
-}
-main .studies > *:not(.show, .nav-row) {
-  grid-column: 1/2;
-}
-.studies .problem, .studies .solution {
-  margin-bottom: 3rem;
-  grid-column: 1/1;
-}
-.studies .show {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-column: span 2;
-}
-.studies .show svg {
-  grid-column: span 2;
-}
-.studies .show svg:nth-of-type(2) {
-  grid-column: span 2;
-  grid-row: 2;
-}
-.studies .hifimobile {
-  width: 329px;
-  height: 671px;
-}
-.studies .nav-row {
-  grid-column: span 2;
 }
 
 .nav-row {
@@ -139,7 +113,7 @@ main .studies > *:not(.show, .nav-row) {
     gap: 1rem 2rem;
   }
   .nav-row {
-    padding: 0 2rem 1rem;
+    padding: 1rem 2rem;
   }
 }
 html {
@@ -161,10 +135,10 @@ a p {
   color: unset;
 }
 
-a.arrow-link {
+.arrow-link, hr {
   position: relative;
 }
-a.arrow-link:after {
+.arrow-link:after, hr:after {
   content: "";
   position: absolute;
   top: 79%;
@@ -175,7 +149,7 @@ a.arrow-link:after {
   bottom: 0;
   height: 2px;
 }
-a.arrow-link:hover:after, a.arrow-link:active:after {
+.arrow-link:hover:after, .arrow-link:active:after, hr:hover:after, hr:active:after {
   border: 1px solid #201F22;
   box-shadow: 2px 1px 2px #eaeaea;
   z-index: -1;
@@ -216,6 +190,7 @@ a.arrow-link:hover:after, a.arrow-link:active:after {
 
 .studies .problem {
   position: relative;
+  text-shadow: none;
 }
 .studies .problem:after {
   content: "";
@@ -224,23 +199,7 @@ a.arrow-link:hover:after, a.arrow-link:active:after {
   left: 0px;
   transform: rotate(-2deg);
   width: 100%;
-  background: #EEF310;
-  height: 2px;
-  border: 1px solid #201F22;
-  box-shadow: 2px 1px 2px #eaeaea;
-  z-index: -1;
-}
-.studies .solution {
-  position: relative;
-}
-.studies .solution:after {
-  content: "";
-  position: absolute;
-  top: 103%;
-  left: 0px;
-  transform: rotate(2deg);
-  width: 100%;
-  background: #EEF310;
+  background: #eaeaea;
   height: 2px;
   border: 1px solid #201F22;
   box-shadow: 2px 1px 2px #eaeaea;

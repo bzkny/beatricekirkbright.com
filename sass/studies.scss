@@ -1,0 +1,76 @@
+@use 'palette';
+
+.studies { 
+
+    
+    // main &>*:not(.show, .nav-row){
+    //     grid-column: 1/2;
+    // }
+    // .problem, .solution {
+    //     margin-bottom: 3rem;
+    //     grid-column: 1/1;
+    // }
+    // .show {
+    //     display: grid;
+    //     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    //     grid-column: span 2;
+    // }
+    // // @media (hover: hover) {
+    // //     grid-template-columns: minmax(auto, 1020px);
+    // // }
+    // .show svg {
+    //     grid-column: span 2;
+    // }
+    // .show svg:nth-of-type(2) {
+    //     grid-column: span 2;
+    //     grid-row: 2;
+    // }
+    // .hifimobile {
+    //     width: 329px;
+    //     height: 671px;
+    // }
+    // .nav-row {
+    //     grid-column: span 2;
+    // }
+
+    .problem {
+        position: relative;
+        text-shadow: none;
+        
+        &:after {
+            //NEW STYLE
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            transform: rotate(-2deg);
+            width: 100%;
+            background: palette.$white;
+            // bottom: 0;
+            height: 2px;
+            border:  1px solid palette.$matte-black;
+            box-shadow: 2px 1px 2px palette.$white;
+            z-index: -1;
+        }
+    }
+    // .solution {
+    //     position: relative;
+        
+    //     &:after {
+    //         //NEW STYLE
+    //         content: "";
+    //         position: absolute;
+    //         top: 103%;
+    //         left: 0px;
+    //         transform: rotate(2deg);
+    //         width: 100%;
+    //         background: palette.$primary-yellowgreen;
+    //         // bottom: 0;
+    //         height: 2px;
+    //         border:  1px solid palette.$matte-black;
+    //         box-shadow: 2px 1px 2px palette.$white;
+    //         z-index: -1;
+    //     }
+    // }
+    
+}

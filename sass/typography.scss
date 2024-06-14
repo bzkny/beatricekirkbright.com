@@ -1,11 +1,12 @@
 @use 'palette';
 
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Voltaire&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Unica+One&display=swap');
 
 body {
     font-family: 'Hind', sans-serif;
-    font-weight: lighter;
+    font-weight: 100;
     font-size: 1.25rem;
     line-height: 1.4;
     color: palette.$white;
@@ -16,6 +17,14 @@ h1 {
     line-height: 1.2;
     -webkit-text-stroke: 0.5px palette.$primary-green;
     -webkit-text-fill-color: palette.$white;
+}
+h2, h3, h4, h5 {
+  font-family: "Voltaire", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased
 }
 p {
     padding-bottom: 0.8rem;

@@ -20,8 +20,7 @@ a {
     }
    
 }
-a.arrow-link {
-
+.arrow-link, hr {
     position: relative;
     
     &:after {
@@ -45,7 +44,6 @@ a.arrow-link {
             box-shadow: 2px 1px 2px palette.$white;
             z-index: -1;
         }
-
     }
 }
 .text-shadow {
@@ -82,46 +80,4 @@ a.arrow-link {
     &.fit {
         width: 75%;
     }
-}
-
-.studies {
-    .problem {
-        position: relative;
-        
-        &:after {
-            //NEW STYLE
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 0px;
-            transform: rotate(-2deg);
-            width: 100%;
-            background: palette.$primary-yellowgreen;
-            // bottom: 0;
-            height: 2px;
-            border:  1px solid palette.$matte-black;
-            box-shadow: 2px 1px 2px palette.$white;
-            z-index: -1;
-        }
-    }
-    .solution {
-        position: relative;
-        
-        &:after {
-            //NEW STYLE
-            content: "";
-            position: absolute;
-            top: 103%;
-            left: 0px;
-            transform: rotate(2deg);
-            width: 100%;
-            background: palette.$primary-yellowgreen;
-            // bottom: 0;
-            height: 2px;
-            border:  1px solid palette.$matte-black;
-            box-shadow: 2px 1px 2px palette.$white;
-            z-index: -1;
-        }
-    }
-    
 }
