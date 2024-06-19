@@ -1,7 +1,69 @@
 @use 'palette';
 
 .studies { 
+    .image-grid {
+        display: grid;
+        
+        .grid-1 {
+            grid-row: 1;
+            grid-column: 1;
 
+            display: grid;
+            grid-template-columns: minmax(220px, 2fr) 12px 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+
+            & > img:not(.arrow) {
+                grid-row: span 3;
+            }
+            p {
+                grid-column: 3/4;
+                padding-bottom: 0;
+
+                &:first-child {
+                    margin-left: 0px;
+                }
+            }
+            .arrow {
+                grid-column: 1/3;
+                justify-self: end;
+            }
+            // .arrow {
+            //     position: absolute;
+            //     left: max(150px, 566px);
+            //     top: 0px;
+            //     &.two {
+            //         top: 22px;
+            //     }
+            //     &.three {
+            //         top: 112px;
+            //     }
+            // }
+        }
+        @media (hover: hover) {
+            
+        }
+    }
+
+    .problem {
+        position: relative;
+        text-shadow: none;
+        
+        &:after {
+            //NEW STYLE
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            transform: rotate(-2deg);
+            width: 100%;
+            background: palette.$white;
+            // bottom: 0;
+            height: 2px;
+            border:  1px solid palette.$matte-black;
+            box-shadow: 2px 1px 2px palette.$white;
+            z-index: -1;
+        }
+    }
     
     // main &>*:not(.show, .nav-row){
     //     grid-column: 1/2;
@@ -32,27 +94,6 @@
     // .nav-row {
     //     grid-column: span 2;
     // }
-
-    .problem {
-        position: relative;
-        text-shadow: none;
-        
-        &:after {
-            //NEW STYLE
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 0px;
-            transform: rotate(-2deg);
-            width: 100%;
-            background: palette.$white;
-            // bottom: 0;
-            height: 2px;
-            border:  1px solid palette.$matte-black;
-            box-shadow: 2px 1px 2px palette.$white;
-            z-index: -1;
-        }
-    }
     // .solution {
     //     position: relative;
         

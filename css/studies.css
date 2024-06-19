@@ -1,3 +1,27 @@
+.studies .image-grid {
+  display: grid;
+}
+.studies .image-grid .grid-1 {
+  grid-row: 1;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: minmax(220px, 2fr) 12px 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.studies .image-grid .grid-1 > img:not(.arrow) {
+  grid-row: span 3;
+}
+.studies .image-grid .grid-1 p {
+  grid-column: 3/4;
+  padding-bottom: 0;
+}
+.studies .image-grid .grid-1 p:first-child {
+  margin-left: 0px;
+}
+.studies .image-grid .grid-1 .arrow {
+  grid-column: 1/3;
+  justify-self: end;
+}
 .studies .problem {
   position: relative;
   text-shadow: none;
