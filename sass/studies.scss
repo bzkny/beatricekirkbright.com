@@ -1,4 +1,5 @@
 @use 'palette';
+@use 'typography';
 
 .studies { 
     .image-grid {
@@ -10,7 +11,8 @@
 
             display: grid;
             grid-template-columns: minmax(220px, 2fr) 12px 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 2fr 5fr;
+            align-items: start;
 
             & > img:not(.arrow) {
                 grid-row: span 3;
@@ -39,9 +41,9 @@
             //     }
             // }
         }
-        @media (hover: hover) {
-            
-        }
+        // @include mobile {
+        //     @extend %sm-text;
+        // }
     }
 
     .problem {
