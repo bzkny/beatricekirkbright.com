@@ -1,9 +1,8 @@
 .page-layout {
   display: grid;
-  min-height: 93vh;
+  min-height: calc(100vh - 100px);
   gap: 1rem;
   padding: 1.5rem 1rem;
-  grid-template-rows: repeat(4, min-content);
 }
 
 .home, .studies {
